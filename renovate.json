@@ -3,5 +3,14 @@
   "extends": [
     "config:recommended",
 "github>p1tt187/renovate-config:default"
+  ],
+  "packageRules": [
+    {
+      "description": "Group packages from odf toolkit",
+      "groupName": "odf toolkit",
+      "matchPackagePrefixes": [
+        "org.odftoolkit:"
+      ]
+    }
   ]
 }
